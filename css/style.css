@@ -1,15 +1,19 @@
-    body {
+     body {
         width: 100%;
         height: auto;
         font-family: 'Montserrat', sans-serif;
         background: #FFFFFF;
+        margin: 0 auto;
     }
     .container {
-        width: 1160px;
-        margin-right: auto;
-        margin-left: auto;
+        max-width: 1160px;
+        width: 100%;
+        margin: 0 auto;
+        box-sizing: border-box;
+        overflow: hidden;
     }
     .header {
+        width: 100%;
         background-image: url("../img/foto.png");
         background-repeat: no-repeat;
         background-size: cover;
@@ -18,14 +22,12 @@
         position: relative;
         height: 1012px;
         padding-top: 120px;
-        width: 100%;
         margin-bottom: 8px;
     }
     .navbar {
         background: rgba(94, 93, 88, 0.6);
         position: fixed;
         height: 120px;
-        display: flex;
         top: 0;
         left: 0;
         width: 100%;
@@ -55,7 +57,7 @@
         cursor: pointer;
     }
     .navbar-menu-box-link {
-            text-decoration: none;
+        text-decoration: none;
         font-size: 32px;
         line-height: 48px;
         padding-top: 37px;
@@ -122,13 +124,11 @@
         margin-top: 265px;
     }
     .header-text {
+        text-transform: uppercase;
         font-weight: bold;
         font-size: 35px;
         color: white;
-        width: 637px;
-        height: 35px;
-        margin-right: auto;
-        margin-left: auto;
+        text-align: center;
     }
     .header-letter {
         color:#18CFAB ;
@@ -138,24 +138,19 @@
         font-size: 78px;
         color: white;
         margin: 22px auto;
-        width: 798px;
-        height: 80px;
+        text-align: center;
     }
     .header-text-two {
+        text-align: center;
         font-size: 34px;
-        width: 795px;
-        height: 34px;
         color: #D4D4D4;
-        margin-right: auto;
-        margin-left: auto;
     }
     .button {
         text-align: center;
         margin-top: 150px;
     }
     .button-one {
-        width: 169px;
-        height: 63px;
+        padding: 13px 19px;
         font-size: 15px;
         line-height: 32px;
         font-weight: bold;
@@ -163,13 +158,12 @@
         background: #18CFAB;
         cursor: pointer;
         border-radius: 5px;
-        border: 1px solid white;
+        border: none;
         border-top: 5px solid white;
         margin-right: 38px;
     }
     .button-two {
-        width: 168px;
-        height: 63px;
+        padding: 13px 18px;
         background: #00CBF6;
         font-weight: bold;
         color: white;
@@ -177,7 +171,7 @@
         line-height: 32px;
         cursor: pointer;
         border-radius: 5px;
-        border: 1px solid white;
+        border: none;
         border-top: 5px solid white;
     }
     .blocks {
@@ -187,14 +181,12 @@
     }
     .blocks-one {
         background-color: #1C2A33;
-        width: 476px;
-        height: 377px;
-      text-align: center;
+        text-align: center;
     }
     .blocks-one-img {
         width: 61px;
         height: 100px;
-        padding:  85px 207px 47px;
+        padding:  85px 207.5px 47px;
     }
     .blocks-one-text{
         font-style: normal;
@@ -202,29 +194,29 @@
         font-size: 20px;
         line-height: 24px;
         color: #18CFAB;
+        padding-bottom: 110px;
     }
     .blocks-two {
        background-color: #18CFAB;;
-        width: 476px;
-        height: 377px;
         text-align: center;
     }
     .blocks-one-img-1 {
         width: 96px;
         height: 78px;
-        padding:  96px 188px 58px;
+        padding:  96px 190.5px 58px;
     }
     .blocks-one-text-1 {
         font-style: normal;
         font-weight: bold;
         font-size: 20px;
         line-height: 24px;
-    color:  #FFFFFF;
+        color:  #FFFFFF;
+        padding-bottom: 110px;
     }
     .blocks-one-img-2 {
         width: 102px;
         height: 79px;
-        padding:  95px 184px 58px;
+        padding:  95px 186px 58px;
     }
     .next-blocks-text {
         font-style: normal;
@@ -338,8 +330,7 @@
     .info-text-button {
         display: block;
         margin:67px auto 125px ;
-        width: 168px;
-        height: 63px;
+         padding: 12px 12px;
         background: #18CFAB;
         font-weight: bold;
         font-size: 15px;
@@ -347,7 +338,7 @@
         color: #FFFFFF;
         cursor: pointer;
         border-radius: 5px;
-        border:1px solid white;
+        border: none;
         border-top: 5px solid white;
     }
     .other {
@@ -469,8 +460,7 @@
     }
     .load-btn {
         padding-bottom: 91px;
-        width: 168px;
-        height: 63px;
+        text-align: center;
     }
     .load-more-btn {
         text-transform: uppercase;
@@ -479,14 +469,14 @@
         border-radius: 5px;
         border:  #18cfab;
         cursor: pointer;
-        width: 168px;
-        height: 63px;
+        padding: 13px 10px 8px 40px;
+        /*width: 168px;*/
+        /*height: 63px;*/
         text-decoration: none;
         color: white;
         font-weight: bold;
         font-size: 16px;
         line-height: 42px;
-        padding-left: 25px;
     }
     .load-more-btn::before {
         position: absolute;
@@ -621,7 +611,7 @@
         height: 2px;
         left: 50%;
         transform: translateX(-50%);
-        top: 50px;
+        top: 70px;
     }
     .collage-text::after {
         content: "";
@@ -631,18 +621,17 @@
         height: 2px;
         left: 52%;
         transform: translateX(-50%);
-        top: 55px;
+        top: 75px;
     }
     .text-description {
-        width: 1160px;
-        height: 45px;
+        text-align: center;
         margin:168px auto 31px auto;
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
         line-height: 30px;
         color: #BBBBBB;
-      display: block;
+        display: block;
         position: relative;
     }
     .text-description::after {
@@ -659,7 +648,6 @@
     }
     .member-name {
         color: #18cfab;
-        font-family: "Montserrat", sans-serif;
         font-size: 16px;
         font-weight: 700;
         text-transform: uppercase;
@@ -667,7 +655,6 @@
     }
     .member-position {
         color: #bbbbbb;
-        font-family: "Montserrat", sans-serif;
         font-size: 13px;
         font-weight: 300;
         padding-bottom: 37px;
@@ -721,12 +708,12 @@
         cursor: pointer;
     }
     .slider-arrow.left {
-        left: 700px;
+        left: 27%;
         width: 22px;
         height: 22px;
     }
     .slider-arrow.right {
-        right: 700px;
+        right: 27%;
         width: 22px;
         height: 22px;
     }
